@@ -1,0 +1,18 @@
+def saludos(nombre):   
+  '''Una funcion para mandar un saludo a un nombre.
+
+    Parámetros:
+    nombre:Un nombre introducido que nos dara el usuario
+
+    Salida:
+    Nos dira 'saludos,nombre'
+    '''
+  print('Saludos',nombre,'.')
+  return
+
+nombre=input('como te llamas:')
+saludos(nombre)
+
+help(saludos)
+
+

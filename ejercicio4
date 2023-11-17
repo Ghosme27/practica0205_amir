@@ -1,0 +1,16 @@
+def media_numeros(lista_numeros):
+    '''Para crear la media de una lista de numeros
+    Parametros:
+    lista=En este caso la lista_prueba
+    suma=El sumatorio de los numeros de la lista
+    media=Es la media de lista
+    Salidas:
+    La media hecha '''
+    suma = sum(lista_numeros)
+    media = suma / len(lista_numeros)
+    return media
+numeros=input('Introduce numeros para una lista separada por' + ':')
+lista_prueba=[ float(entrada) for entrada in numeros.split(':')]
+print('La media de la lista',lista_prueba,'es',media_numeros(lista_prueba))
+help(media_numeros)
+

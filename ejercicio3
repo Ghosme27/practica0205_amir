@@ -1,0 +1,26 @@
+import math
+def area_circula(r):
+    '''Definicion para calcular el area del circulo
+    Parametros:
+    r=Radio introduciodo por el usuario
+    a=Formula del area del circulo(pi*(r**2))
+    Salidas:
+    a=El calculo del area del circulo'''
+    a=math.pi*(r**2)
+    return a
+def volumen_cilindro(h):
+    '''Definicion para calcular el volumen del cilindro
+    Parametros:
+    area_cirucla=Es el area del circulo
+    h=Altura del cilindro
+    b=Formula del volumen del cilindro(area_circula*h)
+    Salidas:
+    b=El calculo del volumen del cilindro'''
+    b=area_circula(r)*h
+    return b
+r=float(input('Introduzca el radio del circulo o cilindro:'))
+h=float(input('Introduce la altura del cilindro:'))
+print('El area del circulo con radio',r,'es de',area_circula(r))
+print('El volumen del cilindro con radio',r,'y alura',h,'es de',volumen_cilindro(h))
+help(area_circula)
+help(volumen_cilindro)

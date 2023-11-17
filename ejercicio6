@@ -1,0 +1,37 @@
+def decimal_a_binario(decimal):
+    '''Para pasar de decimal a binario
+    Parametros:
+    binario=esta entre comillas que iremos rellenando
+    luego metemos un while que mientras el decimal sea mayor de 0 ira dividinedo que mientras el resto sea diferente a 0 
+    y cuando el resto sea igual a 0,el numero binario sera 0 y si es diferente sera 1
+    Salidas:
+    Saldra el numero binario del decimal'''
+    binario = ''
+    while decimal > 0:
+        if decimal % 2 == 0:
+            binario = '0' + binario 
+        else:
+            binario = '1' + binario
+        decimal=decimal // 2
+    return binario
+print(decimal_a_binario(28))
+help(decimal_a_binario)
+
+def binario_a_decimal(binario):
+    '''Para pasar de binario a decimal
+    Parametros:
+    decimal= igual a 0 para que acomule los valores que iran sumando despues
+    a= es para cojer la lista de carecteres del binario
+    n=para cojer el numero entero de la primera posicion del binario o x posicion
+    b=es para saber a que exponente tendra en el 2
+    Salidas:
+    decimal'''
+    decimal = 0
+    a= len(binario)
+    for i in range(binario):
+        n = int(binario[i])
+        b = a - 1 - i
+        decimal += n * (2**b)
+    return decimal
+print(binario_a_decimal(11100)) 
+help(binario_a_decimal)

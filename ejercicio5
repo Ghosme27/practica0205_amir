@@ -1,0 +1,18 @@
+def elevar_numeros(lista_numeros):
+    '''Para crear la potencia de una lista de numeros
+    Parametros:
+    lista=En este caso la lista_prueba
+    elevar=Es la potencia de la lista
+    Salidas:
+    La lista hecha hecha '''
+    lista_elevar=[]
+    for i in lista_numeros:
+        elevar=i**2
+        lista_elevar.append(elevar)
+    return lista_elevar
+
+    return elevar
+numeros=input('Introduce numeros para una lista separada por' + ':')
+lista_prueba=[ float(entrada) for entrada in numeros.split(':')]
+print('La potencia al cuadrado de la lista',lista_prueba,'es',elevar_numeros(lista_prueba))
+help(elevar_numeros)

@@ -1,0 +1,17 @@
+def factorial(n):
+    '''Esta definicion nos servira para darnos el factorial de un numero entero
+    
+    Parametros:
+    Un número entero:n
+    Formula factorial:n*(n-1)
+    
+    Salida:
+    El factorial del numero entero
+    '''
+    if n==0:
+        return 1
+    else:
+       return n*factorial(n-1)
+n=int(input('introduzca un numero entero:'))
+print('Este es el factorial de',n,factorial(n))
+help(factorial)
